@@ -9,9 +9,9 @@ def welcome():
 
 @app.route('/cal', methods=['GET'])
 def math_operation():
-    operation=
-    number1=
-    number2=
+    operation=request.json["operation"]
+    number1=request.json["number1"]
+    number2=request.json["number1"]
 
     if operation == "addition":
         result = number1+number2
